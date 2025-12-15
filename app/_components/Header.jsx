@@ -3,47 +3,52 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="bg-white dark:bg-gray-900">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="flex h-16 items-center justify-between">
-      <Image src='/logo.svg' alt='logo'
-      width={90} height={100}/>
+    <header className="bg-white">
+      <div className="mx-auto shadow-sm max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <Image 
+            src='/logo.svg' 
+            alt='logo'
+            width={300} 
+            height={100}
+            className="h-auto"
+          />
 
       <div className="hidden md:block">
         <nav aria-label="Global">
           <ul className="flex items-center gap-6 text-sm">
             <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
-                About
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                Home
               </a>
             </li>
 
             <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
-                Careers
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                Explore
               </a>
             </li>
 
             <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
-                History
-              </a>
-            </li>
-
-            <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
                 Projects
               </a>
             </li>
 
             <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="#">
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="#">
                 Blog
               </a>
             </li>
@@ -53,19 +58,27 @@ function Header() {
 
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-4">
-          <a className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-teal-700 dark:hover:bg-teal-500" href="#">
+          <a 
+            className="rounded-md px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:opacity-90" 
+            href="#"
+            style={{ backgroundColor: '#3A04FF' }}
+          >
             Login
           </a>
 
           <div className="hidden sm:flex">
-            <a className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:hover:text-white/75 dark:hover:bg-gray-700" href="#">
+            <a 
+              className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium hover:bg-gray-200" 
+              href="#"
+              style={{ color: '#3A04FF' }}
+            >
               Register
             </a>
           </div>
         </div>
 
         <div className="block md:hidden">
-          <button className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
+          <button className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
